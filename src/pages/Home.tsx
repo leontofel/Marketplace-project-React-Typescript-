@@ -10,7 +10,6 @@ import MediumCard from '../components/Cards/MediumCard';
 import { CardsDisplay } from './stylesHome';
 import Footer from '../components/Footer/Footer';
 import { Banner } from '../components/Banner/Banner';
-import dealCard from '../assets/img/deal-card.jpg';
 import SingleCard from '../components/Cards/SingleCard';
 
 

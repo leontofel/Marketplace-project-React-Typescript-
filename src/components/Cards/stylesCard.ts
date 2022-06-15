@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mediumSize, secondaryColor, smallSize, backgroundColor } from '../../styles/variables';
+import { mediumSize, secondaryColor, smallSize} from '../../styles/variables';
 
 const CardsContainer = styled.section`
     background-color: ${secondaryColor};
