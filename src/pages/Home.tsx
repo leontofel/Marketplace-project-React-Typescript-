@@ -70,6 +70,8 @@ export default function Home() {
                 <Banner link="https://m.media-amazon.com/images/G/32/adplacement/01222433_UAT-BR_CSN_1940_500.jpg" title="Veja o melhor conteúdo" img="https://m.media-amazon.com/images/G/32/adplacement/01222433_UAT-BR_CSN_1940_500.jpg" />
             </CardsDisplay>
 
+
+
             <Footer />
         </>
     );
