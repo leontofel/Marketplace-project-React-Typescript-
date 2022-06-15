@@ -3,7 +3,7 @@ import { backgroundColor, mediumSize, primaryColor, secondaryColor, smallSize, t
 
 const NavBarWrapper = styled.nav`
     background-color: ${secondaryColor};
-    color: ${tertiaryColor};
+    color: ${backgroundColor};
     font-size: ${smallSize};
     width: 100vw;
     height: 8vh;
@@ -14,7 +14,7 @@ const NavBarWrapper = styled.nav`
     button {
         background-color: ${secondaryColor};
         border: none;
-        color: ${tertiaryColor};
+        color: ${backgroundColor};
         margin-left: 1.5rem;
         display: flex;
         justify-content: space-evenly;
@@ -45,7 +45,7 @@ const NavBarWrapper = styled.nav`
     }
     aside {
         text-align: end;
-        padding: .3rem .8rem;
+        padding: 1rem;
         font-size: ${mediumSize};
         &:hover {
             border: 3px solid ${backgroundColor};

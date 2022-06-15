@@ -13,7 +13,7 @@ export default function Header() {
 
     return (
         
-            <header>
+            <header id="inicio">
                 <HeaderContainer>
                     <LogoImg src={logo} alt="Logo do Marketplace"></LogoImg>
                     <AddressOption /> 

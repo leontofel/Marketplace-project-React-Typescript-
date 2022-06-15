@@ -5,12 +5,14 @@ import { backgroundColor, mediumSize, primaryColor, secondaryColor, smallSize, t
 const SideMenuWrapper = styled.div`
     font-size: ${mediumSize};
     max-width: 30vw;
-    height: 100vh;
+    height: 1000px;
     position: absolute;
     background-color: ${backgroundColor};
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 1!important;
+    transition: width .35s;
     .lz-side-title{
         &:hover{
             background-color: ${tertiaryColor};
