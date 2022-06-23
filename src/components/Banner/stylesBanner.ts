@@ -9,7 +9,7 @@ background-image: url(${(props: BannerProps) => props.image});
 max-width: 50vw;
 
 img {
-    max-width: 55vw;
+    max-width: 42vw;
     height: 50vh;
     
 }

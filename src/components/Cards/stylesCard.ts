@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mediumSize, secondaryColor, smallSize} from '../../styles/variables';
+import { backgroundColor, mediumSize, secondaryColor, smallSize, tertiaryColor} from '../../styles/variables';
 
 const CardsContainer = styled.section`
     background-color: ${secondaryColor};
@@ -7,6 +7,7 @@ const CardsContainer = styled.section`
     max-height: 55vh;
     padding: 2rem;
     display: grid;
+    color: ${backgroundColor};
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
@@ -31,6 +32,10 @@ const Card = styled.div`
     &:hover {
         cursor: pointer;
     }
+    img {
+        width: 15vw;
+        height: 19vh; 
+    }
 `;
 
 const CardImg = styled.img`
@@ -45,6 +50,7 @@ const SingleCardContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: solid 5px white;
     h2{
         font-size: 1.7rem;
         padding-bottom: 1rem;

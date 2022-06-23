@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useRecoilState } from "recoil";
 import { sideNavBarMenu } from "../../state/atom";
 import SideMenu from "./SideMenu/SideMenu";

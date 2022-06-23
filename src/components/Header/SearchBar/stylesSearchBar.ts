@@ -20,7 +20,8 @@ const SearchWrapper = styled.form`
         }
         button {
             background-color: ${secondaryColor};
-            width: 10%;
+            width: 100%;
+            height: 100%;
             &:hover {
                 background-color: "#2b72e6";
                 cursor: pointer;
