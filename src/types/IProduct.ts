@@ -9,4 +9,5 @@ export default interface IProduct {
     type: string,
     comments: [],
     features: [],
+    shipping: string | number
 }

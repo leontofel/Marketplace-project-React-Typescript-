@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/img/logo.png';
 import AccountMenuBar from './AccountMenuBar/AccountMenuBar';
 import AddressOption from './AddressOption/AddressOption';
@@ -15,7 +16,9 @@ export default function Header() {
         
             <header id="inicio">
                 <HeaderContainer>
-                    <LogoImg src={logo} alt="Logo do Marketplace"></LogoImg>
+                    <Link to='/'>
+                        <LogoImg src={logo} alt="Logo do Marketplace"></LogoImg>
+                    </Link>
                     <AddressOption /> 
                     <SearchBar />
                     <AccountMenuBar />

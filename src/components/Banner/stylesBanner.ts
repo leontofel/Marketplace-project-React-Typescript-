@@ -6,18 +6,17 @@ interface BannerProps {
 
 const BannerContainer = styled.section`
 background-image: url(${(props: BannerProps) => props.image});
-max-width: 50vw;
-
+max-width: 60vw;
+margin: 1rem;
 img {
-    max-width: 42vw;
-    height: 50vh;
+    width: 60vw;
+    height: 60vh;
     
 }
 h2 {
     color: white;
     font-size: 2rem;
-    position: relative;
-    left: 30%;
+    text-align: center;
 }
 `
 

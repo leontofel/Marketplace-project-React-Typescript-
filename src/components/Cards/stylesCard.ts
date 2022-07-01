@@ -3,8 +3,8 @@ import { backgroundColor, mediumSize, secondaryColor, smallSize, tertiaryColor} 
 
 const CardsContainer = styled.section`
     background-color: ${secondaryColor};
-    max-width: 25vw;
-    max-height: 55vh;
+    width: 25vw;
+    height: 65vh;
     padding: 2rem;
     display: grid;
     color: ${backgroundColor};
@@ -29,21 +29,24 @@ const Card = styled.div`
     h3 {
         font-size: ${mediumSize};
     }
-    &:hover {
-        cursor: pointer;
-    }
     img {
-        width: 15vw;
-        height: 19vh; 
+        max-width: 13vw;
+        max-height: 24vh; 
+        object-fit: cover;
+        &:hover {
+            cursor: pointer;
+        }
     }
 `;
 
 const CardImg = styled.img`
-    max-width: 90%;
+    max-width: 25vw;
+    max-height: 50vh;
 `;
 
 const SingleCardContainer = styled.div`
     width: 30vw;
+    max-height: 65vh;
     margin: 1rem;
     padding: 2rem 0px;
     background-color: ${secondaryColor};
