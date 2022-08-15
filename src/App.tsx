@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
-import Home from './pages/Home';
-import NotFound from './pages/NotFound';
-import ProductPage from './pages/ProductPage';
-import SearchPage from './pages/SearchPage';
+import Home from './pages/Home/Home';
+import NotFound from './pages/NotFound/NotFound';
+import ProductPage from './pages/ProductPage/ProductPage';
+import SearchPage from './pages/SearchPage/SearchPage';
 
 
 function App() {

@@ -2,7 +2,7 @@ import IProduct from "../../types/IProduct";
 import MediumCard from "../Cards/MediumCard";
 import SingleCard from "../Cards/SingleCard";
 import Carousel from "../Carousel/Carousel";
-import { AsideProductMenu, CarouselProductWrapper, ProductDescription, ProductDisplayContainer, ProductReviews, ProductTitle } from "./styleProductDisplay";
+import { AsideProductMenu, CarouselProductWrapper, ProductDescription, ProductDisplayContainer, ProductReviews, ProductTitle } from "./stylesProductDisplay";
 
 
 
