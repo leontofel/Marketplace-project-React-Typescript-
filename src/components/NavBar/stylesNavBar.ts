@@ -36,19 +36,19 @@ const NavBarWrapper = styled.nav`
        
         li{
             margin-right: 15px; 
+            padding: 5px;
             &:hover {
                 border: 3px solid ${backgroundColor};
-                padding: 0 .5rem;
                 cursor: pointer;   
         }
         }
     }
     aside {
         text-align: end;
-        padding: 1rem;
+        padding: 10px;
         font-size: ${mediumSize};
         &:hover {
-            border: 3px solid ${backgroundColor};
+            border: 2px solid ${backgroundColor};
             cursor: pointer;   
         }
         span {

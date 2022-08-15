@@ -7,16 +7,15 @@ background-color: ${primaryColor};
 color: ${backgroundColor};
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: space-evenly;
 
 `;
 const LogoImg = styled.img`
 max-width: 15vw;
 max-height: 15vh;
-padding: 1rem 0 1rem 1rem;
+padding: 10px;
 &:hover{
-    border: 3px solid ${backgroundColor};
-    padding: 1rem;
+    border: 2px solid ${backgroundColor};
     cursor: pointer;
 }
 `;
