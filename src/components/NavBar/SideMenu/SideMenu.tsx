@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useRecoilState } from "recoil";
 import { sideNavBarMenu } from "../../../state/atom";
 import { SideMenuWrapper } from "./stylesSideMenu"
@@ -10,8 +11,7 @@ export default function SideMenu() {
         <>
             <SideMenuWrapper>
                 <div className="side-menu-title">
-                    {/*<LoginSide?Menu/>*/}
-                    <h2>Olá, faça seu login</h2>
+                    <h2>Olá, faça seu <Link to='/login'>login</Link></h2>
                     <button onClick={() => setSideMenu(!sideMenu)}>X</button>
                 </div>
                 <div>

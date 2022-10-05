@@ -15,3 +15,8 @@ export const currentSearchType = atom<string>({
   key: 'currentSearchType',
   default: 'all'
 })
+
+export const currentToken = atom<string>({
+  key: 'currentToken',
+  default: ''
+})

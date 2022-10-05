@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
+import CadasterPage from './pages/Cadaster/CadasterPage';
 import Home from './pages/Home/Home';
 import LoginPage from './pages/Login/LoginPage';
 import NotFound from './pages/NotFound/NotFound';
@@ -18,6 +19,7 @@ function App() {
             <Route path='/search' element={<SearchPage />} />
             <Route path='/product/:id' element={<ProductPage />} />
             <Route path='/login' element={<LoginPage />} />
+            <Route path='/cadaster' element={<CadasterPage />} />
             <Route path='*' element={<NotFound />} />
 
         </Routes>

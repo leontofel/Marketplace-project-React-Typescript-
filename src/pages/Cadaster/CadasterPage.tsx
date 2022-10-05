@@ -1,12 +1,13 @@
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
-import LoginDisplay from "../../components/LoginDisplay/LoginDisplay";
+import RegisterDisplay from "../../components/RegisterDisplay/RegisterDisplay";
 
-export default function Login() {
+export default function CadasterPage() {
+
     return (
         <>
             <Header />
-            <LoginDisplay />
+            <RegisterDisplay />
             <Footer />
         </>
     );
