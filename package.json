@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@coreui/react": "^4.2.2",
+    "@reduxjs/toolkit": "^1.8.6",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
@@ -19,6 +20,8 @@
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
     "react-hook-form": "^7.36.1",
+    "react-jwt": "^1.1.7",
+    "react-redux": "^8.0.4",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "recoil": "^0.7.3",

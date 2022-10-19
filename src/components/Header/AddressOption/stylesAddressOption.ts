@@ -3,30 +3,29 @@ import { backgroundColor, mediumSize, smallSize } from "../../../styles/variable
 
 const AddressWrapper = styled.div`
    
-    height: 5vh;
+    height: 14vh;
+    max-width: 20vw;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: 0.2fr 1fr;
-    grid-template-rows: 1fr;
+    display:flex;
     cursor: pointer;
+    
     &:hover{
             border: 3px solid ${backgroundColor};
             padding: 1rem 0;
             cursor: pointer;
         }
     svg {
-        grid-column: 1 / 2;
+        margin: .3rem;
     }
     h4 {
-        font-size: ${mediumSize};
+        font-size: ${smallSize};
         font-weight: bolder;
+        max-width: 50%;
+        overflow-wrap: normal;
     }
     h5 {
        font-size: ${smallSize};
-    }
-    h5, h4 {
-        grid-column: 2;
     }
 `;
 

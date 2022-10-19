@@ -1,4 +1,5 @@
 import { atom } from "recoil";
+import IProduct from "../types/IProduct";
 
 
 export const sideNavBarMenu = atom<boolean>({
@@ -19,4 +20,9 @@ export const currentSearchType = atom<string>({
 export const currentToken = atom<string>({
   key: 'currentToken',
   default: ''
+})
+
+export const shoppingCart = atom<IProduct[]>({
+  key: 'shoppingCart',
+  default: []
 })

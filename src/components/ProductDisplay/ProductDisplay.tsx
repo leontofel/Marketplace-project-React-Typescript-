@@ -1,3 +1,8 @@
+import { useEffect, useState } from "react";
+import { useAddress } from "../../hooks/useAddress";
+import { useShoppingCart } from "../../hooks/useShoppingCart";
+import { useVerifyToken } from "../../hooks/useVerifyToken";
+import { IAddress } from "../../types/IAddress";
 import IProduct from "../../types/IProduct";
 import MediumCard from "../Cards/MediumCard";
 import SingleCard from "../Cards/SingleCard";
@@ -7,13 +12,16 @@ import { AsideProductMenu, CarouselProductWrapper, ProductDescription, ProductDi
 
 
 export default function ProductDisplay({ _id, title, price, description, comments, features, photos, type, shipping }: IProduct) {
+    const address = useAddress();
+    const {displayCart, addItem, removeItem} = useShoppingCart();
+
 
     return (
         <main>
             <ProductDisplayContainer>
 
                 
-                    <CarouselProductWrapper><Carousel slots={photos.length} images={photos} /></CarouselProductWrapper>
+                (<CarouselProductWrapper><Carousel slots={photos.length} images={photos} /></CarouselProductWrapper>
                 
                 <section>
                     <ProductTitle>
@@ -65,10 +73,10 @@ export default function ProductDisplay({ _id, title, price, description, comment
                                 <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
                                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                             </svg>
-                            <h6>Enviar para ... - CEP</h6>
+                            {address !== undefined && <h6>Enviar para {address.street}, {address.number} , {address.complement}, {address.city}, {address.state}, CEP:{address.cep}</h6>}
                         </div>
                         <h5>Em estoque.</h5>
-                        <button className="cart-button">Adicionar ao carrinho</button>
+                        <button className="cart-button" onClick={() => addItem(_id)}>Adicionar ao carrinho</button>
                         <button>Comprar agora</button>
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-lock" viewBox="0 0 16 16">
@@ -107,7 +115,7 @@ export default function ProductDisplay({ _id, title, price, description, comment
                         </ul>
                     </ProductReviews>
                 </section>
-                <MediumCard name="Olhe essas ofertas: " />
+                <MediumCard name="Olhe essas ofertas: " />)
 
             </ProductDisplayContainer>
         </main>

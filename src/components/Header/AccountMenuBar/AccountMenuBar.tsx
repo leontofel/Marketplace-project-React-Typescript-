@@ -1,14 +1,21 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useRecoilState } from "recoil";
+import { useUserName } from "../../../hooks/useUserName";
+import { currentToken } from "../../../state/atom";
 import { AccountMenuBarWrapper } from "./stylesAccountMenuBar";
 
 export default function AccountMenuBar() {
 
-    const [menuOpen, setMenuOpen] = useState(false)
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [token, setToken] = useRecoilState(currentToken);
+    const name = useUserName();
+
+
     return (
         <>
         <AccountMenuBarWrapper onMouseEnter={() => setMenuOpen(true)} onMouseLeave={() => setMenuOpen(false)}>
-            <h5>Olá, faça seu login</h5>
+            {name !== undefined ? <h5>Olá, {name}</h5> : <h5>Olá, faça seu login</h5>}
             <h3 >Contas e Listas</h3>
             {menuOpen && <div>
                 <div><ul>
@@ -31,7 +38,10 @@ export default function AccountMenuBar() {
                     <li>Leitura</li>
                     <li>Aplicativos e dispositivos</li>
                     <li>Trocar de conta</li>
-                    <li>Sair da conta</li>
+                    <li onClick={() => {
+                    setToken("")
+                    
+                    }}> Sair da conta</li>
                 </ul>
                 </div>
             </div>}
